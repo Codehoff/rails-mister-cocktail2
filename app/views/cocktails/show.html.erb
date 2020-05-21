@@ -1,0 +1,15 @@
+<h1><%=@cocktail.name%> </h1>
+<%@cocktail.doses.each do |dose| %>
+    <h3><%=dose.description%> <%=dose.ingredient.name%> </h3>
+    <%= link_to "/doses/#{dose.id}", method: :delete, data: { confirm: "Are you sure? "} do %> <i class="fa fa-trash" aria-hidden="true"></i><% end %>
+<%end%>
+<br>
+<br>
+<br>
+
+<h1>Add some ingredients</h1>
+<%= simple_form_for [ @cocktail, @dose ] do |f| %>
+    <%= f.input :description %>
+    <%= f.association :ingredient %>
+    <%= f.submit "Add Dose" %>
+<% end %>
