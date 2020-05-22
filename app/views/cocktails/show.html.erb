@@ -1,4 +1,9 @@
-<h1><%=@cocktail.name%> </h1>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo.key %>');">
+    <div class="container">
+      <h1><%=@cocktail.name%></h1>
+    </div>
+  </div>
+<h2>Recipe:</h2>
 <%@cocktail.doses.each do |dose| %>
     <h3><%=dose.description%> <%=dose.ingredient.name%> </h3>
     <%= link_to "/doses/#{dose.id}", method: :delete, data: { confirm: "Are you sure? "} do %> <i class="fa fa-trash" aria-hidden="true"></i><% end %>
