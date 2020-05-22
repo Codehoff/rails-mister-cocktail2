@@ -14,9 +14,11 @@ Ingredient.create(name: "cucumber")
 Ingredient.create(name: "vodka")
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
-Cocktail.create(name: "Moscow Mule")
 Dose.create(description: "2 slices of", cocktail_id: 1, ingredient_id: 2)
 Dose.create(description: "4 cl", cocktail_id: 1, ingredient_id: 3)
 Dose.create(description: "200 ml", cocktail_id: 1, ingredient_id: 1)
 Dose.create(description: "2 hands full of", cocktail_id: 1, ingredient_id: 5)
+
+
+
 
