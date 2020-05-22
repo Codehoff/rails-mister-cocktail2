@@ -9,7 +9,7 @@
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
       <%= link_to "cocktails/#{cocktail.id}" do %>
-        <div class="card-trip" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1530991808291-7e157454758c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=250);">
+        <div class="card-trip" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @article.photo.key, height: 200, width: 350, crop: :fill %>');">
           <div class="container">
             <h2><%= cocktail.name %></h2>
           </div>
@@ -25,6 +25,8 @@
   </div>
 </body>
 <br>
+<%= cl_image_tag("vre75ecalfnbuvcravdv",
+      width: 400, height: 300, crop: :fill) %>
 <br>
 <br>
 <br>
