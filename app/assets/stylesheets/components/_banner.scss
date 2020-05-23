@@ -23,8 +23,12 @@
 
     .container {
         position: absolute;
+        width: 600px;
         top: 451px;
-        left: 250px;
+        left: 150px;
 
+    }
+    #banner-text-typedjs {
+        display: inline;
     }
 }
