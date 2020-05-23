@@ -12,14 +12,36 @@
         font-size: 64px;
         font-weight: bold;
     }
+
     .container {
         position: absolute;
         width: 600px;
         top: 451px;
         left: 150px;
-
     }
+
+    .buttonnn {
+        position: absolute;
+        top: 620px;
+        left: 180px;
+    }
+    
     #banner-text-typedjs {
         display: inline;
+    }
+
+    .btn {
+        border-radius: 10px;
+        padding: 8px;
+        font-weight: 600;
+        font-size: 22px;
+        color: white;
+        font-family: "Nunito", "Helvetica", "sans-serif";
+
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: #1EDD88;
     }
 }
