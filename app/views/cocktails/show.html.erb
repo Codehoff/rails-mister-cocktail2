@@ -1,6 +1,6 @@
 <body style="background-color: black">
 <% if @cocktail.photo.attached? %>
-    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo.key %> ');">
+    <div class="banner d-flex" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo.key %> ');">
 <% else %>
     <div class="banner">
 <% end %>
