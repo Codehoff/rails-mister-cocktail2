@@ -1,6 +1,6 @@
 <body style="background-color: black">
 <% if @cocktail.photo.attached? %>
-    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo.key %>');">
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo.key %> ');">
 <% else %>
     <div class="banner">
 <% end %>
@@ -9,7 +9,7 @@
     </div>
   </div>
 <div class="Recipe ml-5" style="color:white">
-    <h2>Recipe:</h2>
+    <h2 class= mt-5>Recipe:</h2>
     
     <%@cocktail.doses.each do |dose| %>
     <div class="d-flex align-items-center">
